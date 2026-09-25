@@ -144,6 +144,294 @@ export const services = [
       },
     ],
   },
+  {
+    slug: "kitchen-remodeling",
+    title: "Kitchen Remodeling",
+    summary:
+      "Full kitchen renovations from layout redesign to custom cabinetry, countertops, and lighting.",
+    heroDescription:
+      "From open-concept layout redesigns to custom cabinetry, countertops, and lighting, we turn outdated kitchens into the space your home deserves.",
+    heroImage:
+      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=1600&q=80",
+    features: [
+      "Custom cabinetry and storage design",
+      "Countertop and backsplash installation",
+      "Layout redesign and open-concept conversions",
+      "Lighting and electrical updates",
+    ],
+    faqs: [
+      {
+        question: "How long does a kitchen remodel take?",
+        answer:
+          "A typical full kitchen remodel takes 4 to 8 weeks depending on scope, from demolition through final inspection.",
+      },
+      {
+        question: "Do I need permits for a kitchen renovation?",
+        answer:
+          "Permits are typically required for electrical, plumbing, or structural changes. We handle permit applications as part of every project.",
+      },
+      {
+        question: "Can I stay in my home during the remodel?",
+        answer:
+          "Most clients stay in their home during a kitchen remodel. We set up a temporary kitchen area and minimize disruption to the rest of the house.",
+      },
+    ],
+  },
+  {
+    slug: "basement-development",
+    title: "Basement Development",
+    summary:
+      "Transform unfinished basements into legal suites, home theaters, or additional living space.",
+    heroDescription:
+      "Turn unused square footage into a legal secondary suite, home theater, or additional living space — fully permitted, framed, and finished from start to end.",
+    heroImage:
+      "https://images.unsplash.com/photo-1615529162924-f8605388461d?w=1600&q=80",
+    features: [
+      "Legal secondary suite development",
+      "Framing, insulation, and drywall",
+      "Egress window installation",
+      "Bathroom and wet bar rough-ins",
+    ],
+    faqs: [
+      {
+        question: "Can you build a legal basement suite?",
+        answer:
+          "Yes, we handle full legal secondary suite development including permits, egress windows, and required fire separation.",
+      },
+      {
+        question: "How long does basement development take?",
+        answer:
+          "A full basement development typically takes 6 to 10 weeks depending on size and whether plumbing is being added.",
+      },
+    ],
+  },
+  {
+    slug: "bathroom-renovation",
+    title: "Bathroom Renovation",
+    summary:
+      "From powder room refreshes to full spa-style master bathroom transformations.",
+    heroDescription:
+      "From powder room refreshes to full spa-style master ensuites with curbless showers and heated flooring, we design bathrooms built around how you actually live.",
+    heroImage:
+      "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1600&q=80",
+    features: [
+      "Custom tile and shower installation",
+      "Vanity and fixture upgrades",
+      "Heated flooring options",
+      "Accessibility and aging-in-place modifications",
+    ],
+    faqs: [
+      {
+        question: "How long does a bathroom renovation take?",
+        answer:
+          "A standard bathroom renovation takes 2 to 4 weeks. Larger master ensuite projects can take up to 6 weeks.",
+      },
+      {
+        question: "Can you make a bathroom more accessible?",
+        answer:
+          "Yes, we install curbless showers, grab bars, and other aging-in-place modifications as part of standard bathroom renovations.",
+      },
+    ],
+  },
+  {
+    slug: "flooring",
+    title: "Flooring Installation",
+    summary:
+      "Hardwood, engineered wood, tile, and luxury vinyl plank installation throughout the home.",
+    heroImage:
+      "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=1600&q=80",
+    features: [
+      "Hardwood and engineered wood installation",
+      "Tile and luxury vinyl plank flooring",
+      "Subfloor repair and leveling",
+      "Whole-home flooring consistency planning",
+    ],
+    faqs: [
+      {
+        question: "What flooring material lasts the longest?",
+        answer:
+          "Solid hardwood and porcelain tile are the most durable options, often lasting 25+ years with proper care.",
+      },
+      {
+        question: "How long does flooring installation take?",
+        answer:
+          "Most single-room flooring installs are completed in 1 to 3 days; whole-home projects typically take 1 to 2 weeks.",
+      },
+    ],
+  },
+  {
+    slug: "electrical",
+    title: "Electrical Services",
+    summary:
+      "Panel upgrades, rewiring, lighting design, and electrical work for renovations and additions.",
+    heroImage:
+      "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=80",
+    features: [
+      "Panel upgrades and rewiring",
+      "Lighting design and installation",
+      "EV charger installation",
+      "Code-compliant renovation wiring",
+    ],
+    faqs: [
+      {
+        question: "Are your electricians licensed?",
+        answer:
+          "Yes, all electrical work is performed or supervised by licensed electricians and inspected to local code.",
+      },
+      {
+        question: "Do I need an electrical permit for a renovation?",
+        answer:
+          "Most electrical work beyond fixture swaps requires a permit. We handle the permit process as part of the project.",
+      },
+    ],
+  },
+  {
+    slug: "framing",
+    title: "Framing",
+    summary:
+      "Structural framing for additions, basement suites, and interior wall reconfigurations.",
+    heroImage:
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&q=80",
+    features: [
+      "Structural wall framing",
+      "Load-bearing wall removal and beam installation",
+      "Addition and extension framing",
+      "Interior layout reconfiguration",
+    ],
+    faqs: [
+      {
+        question: "Can you remove a load-bearing wall?",
+        answer:
+          "Yes, we handle load-bearing wall removal including engineered beam installation and required permits.",
+      },
+    ],
+  },
+  {
+    slug: "painting",
+    title: "Interior & Exterior Painting",
+    summary:
+      "Professional painting services for full renovations, single rooms, or exterior refreshes.",
+    heroImage:
+      "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1600&q=80",
+    features: [
+      "Interior and exterior painting",
+      "Color consultation",
+      "Trim, cabinet, and door refinishing",
+      "Surface prep and repair",
+    ],
+    faqs: [
+      {
+        question: "Do you help with color selection?",
+        answer:
+          "Yes, our team provides color consultation as part of every painting project to match your renovation's design direction.",
+      },
+    ],
+  },
+  {
+    slug: "decks-fencing",
+    title: "Decks & Fencing",
+    summary:
+      "Custom deck construction and fencing for outdoor living and property definition.",
+    heroImage:
+      "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?w=1600&q=80",
+    features: [
+      "Custom deck design and construction",
+      "Composite and pressure-treated wood options",
+      "Privacy and boundary fencing",
+      "Railing and stair installation",
+    ],
+    faqs: [
+      {
+        question: "Do you build permit-compliant decks?",
+        answer:
+          "Yes, all deck builds are designed and constructed to meet local building code and permit requirements.",
+      },
+    ],
+  },
+  {
+    slug: "windows-doors",
+    title: "Windows & Doors",
+    summary:
+      "Energy-efficient window and door replacement for renovations and additions.",
+    heroImage:
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1600&q=80",
+    features: [
+      "Energy-efficient window replacement",
+      "Exterior and interior door installation",
+      "Egress window installation for basements",
+      "Weatherproofing and sealing",
+    ],
+    faqs: [
+      {
+        question: "Will new windows lower my energy bills?",
+        answer:
+          "Energy-efficient window replacements typically reduce heating and cooling costs by improving insulation and reducing drafts.",
+      },
+    ],
+  },
+  {
+    slug: "driveways-concrete",
+    title: "Driveways & Concrete",
+    summary:
+      "Concrete driveways, walkways, and flatwork for renovation and curb appeal projects.",
+    heroImage:
+      "https://images.unsplash.com/photo-1626885930974-4b69aa21bbf9?w=1600&q=80",
+    features: [
+      "Concrete driveway installation and replacement",
+      "Walkway and patio flatwork",
+      "Exposed aggregate and stamped concrete finishes",
+      "Grading and drainage correction",
+    ],
+    faqs: [
+      {
+        question: "How long does a concrete driveway take to cure?",
+        answer:
+          "Concrete driveways are typically drivable after 7 days and reach full cure strength after about 28 days.",
+      },
+    ],
+  },
+  {
+    slug: "home-additions",
+    title: "Home Additions",
+    summary:
+      "Room additions and second-story extensions to grow your home's livable space.",
+    heroImage:
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1600&q=80",
+    features: [
+      "Single-story room additions",
+      "Second-story extensions",
+      "Sunrooms and enclosed porches",
+      "Structural engineering and permits",
+    ],
+    faqs: [
+      {
+        question: "How long does a home addition take?",
+        answer:
+          "A typical single-room addition takes 8 to 14 weeks from permit approval to completion, depending on scope.",
+      },
+    ],
+  },
+  {
+    slug: "general-contracting",
+    title: "General Contracting",
+    summary:
+      "Full-service project management for multi-trade renovations from start to finish.",
+    heroImage:
+      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1600&q=80",
+    features: [
+      "Single point of contact for multi-trade projects",
+      "Permit management and inspections",
+      "Subcontractor scheduling and quality control",
+      "Budget and timeline management",
+    ],
+    faqs: [
+      {
+        question: "What does a general contractor do on my project?",
+        answer:
+          "We manage every trade involved in your renovation — scheduling, permits, inspections, and quality control — so you have one point of contact from start to finish.",
+      },
+    ],
+  },
 ];
 
 export function getServiceBySlug(slug) {

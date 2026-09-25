@@ -11,8 +11,19 @@ import { Reveal } from "@/components/animations/Reveal";
 import { Button } from "@/components/ui/Button";
 import { services } from "@/lib/services-data";
 
+const FEATURED_SLUGS = [
+  "carpet-cleaning",
+  "renovation-cleaning",
+  "drywall",
+  "roofing",
+  "siding",
+  "kitchen-remodeling",
+];
+
 export function ServicesPreview() {
-  const featured = services;
+  const featured = FEATURED_SLUGS.map((slug) =>
+    services.find((service) => service.slug === slug)
+  ).filter(Boolean);
 
   const rowRefs = useRef([]);
   const [activeIndex, setActiveIndex] = useState(0);
