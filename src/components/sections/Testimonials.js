@@ -44,7 +44,7 @@ export function Testimonials() {
                   &ldquo;{item.quote}&rdquo;
                 </p>
                 <footer className="mt-4 text-sm text-muted-foreground">
-                  {item.author} — {item.location}
+                  {item.author}, {item.location}
                 </footer>
               </blockquote>
             ))}
@@ -143,8 +143,8 @@ function SectionHeading() {
       />
       <Reveal delay={0.15}>
         <p className="mt-5 text-base text-muted-foreground">
-          We measure a project by whether the people living with it every day are
-          still happy with it years later — these are their words, not ours.
+          We measure a project by whether the people living with it every single day
+          are still happy with it years later. These are their words, not ours.
         </p>
       </Reveal>
     </div>

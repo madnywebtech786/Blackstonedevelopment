@@ -17,8 +17,8 @@ export function ServiceAreaSection() {
         />
         <p className="mt-5 max-w-xl text-muted-foreground">
           From downtown Calgary to the surrounding towns, our crews are on
-          the road daily — no travel surcharges, no scheduling gaps for
-          jobs outside the core.
+          the road daily, with no travel surcharges or scheduling gaps
+          for jobs outside the core.
         </p>
 
         <Reveal className="mt-12 sm:mt-16">

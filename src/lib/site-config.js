@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: "Black Stone Basement Development Ltd",
   shortName: "Black Stone",
-  tagline: "Restored right, built to last.",
+  tagline: "Renovated right, built to last.",
   description:
-    "Black Stone Basement Development Ltd is a Calgary-area home services company specializing in carpet cleaning, renovation cleaning, drywall, roofing, and siding.",
+    "Black Stone Basement Development Ltd is a trusted Calgary basement renovation contractor specializing in basement development, kitchen remodeling, carpet cleaning, drywall, roofing, and siding. Insured and serving Calgary and nearby Alberta communities.",
   url: "https://example.com",
   phone: "403-971-9530",
   phoneHref: "tel:+14039719530",

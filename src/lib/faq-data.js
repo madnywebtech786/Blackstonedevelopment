@@ -16,7 +16,7 @@ export const faqTopics = [
       {
         question: "What types of projects do you take on?",
         answer:
-          "We handle carpet cleaning, post-renovation cleaning, drywall installation and repair, roofing, and siding — for homeowners, landlords, and post-construction handoffs alike.",
+          "We handle basement development, carpet cleaning, drywall installation and repair, roofing, and siding work for homeowners, landlords, and post-construction handoffs alike.",
       },
     ],
   },
@@ -32,7 +32,7 @@ export const faqTopics = [
       {
         question: "Is the quote fixed once I approve it?",
         answer:
-          "Yes. What's quoted is what's billed — any change orders are itemized and approved by you before that work begins.",
+          "Yes. What's quoted is what's billed, and any change orders are itemized and approved by you before that work begins.",
       },
       {
         question: "Do you charge for an initial estimate?",
@@ -48,7 +48,7 @@ export const faqTopics = [
       {
         question: "How long does a typical job take?",
         answer:
-          "Timelines vary by service — carpet cleaning is usually same-day, drywall repairs take 1 to 3 days, and larger jobs like roofing or siding typically take 1 to 7 days depending on scope.",
+          "Timelines vary by service. Carpet cleaning is usually same-day, drywall repairs take 1 to 3 days, and larger jobs such as roofing or siding typically take 1 to 7 days depending on scope.",
       },
       {
         question: "What does the process look like from start to finish?",
@@ -69,7 +69,7 @@ export const faqTopics = [
       {
         question: "Do you handle permits?",
         answer:
-          "Yes, where a job requires a permit — such as a full roof replacement — we handle the application and inspection as part of the project.",
+          "Yes, where a job requires a permit, such as a full roof replacement, we handle the application and inspection as part of the job for you.",
       },
       {
         question: "Does roofing or siding always require a permit?",

@@ -6,18 +6,22 @@ import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { ServiceAreaSection } from "@/components/sections/ServiceAreaSection";
 import { CTABand } from "@/components/sections/CTABand";
 import { siteConfig } from "@/lib/site-config";
+import { getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata = {
   title: "About",
   description:
-    "Learn about Black Stone Basement Development Ltd, a Calgary-area home services company with 5+ years of experience in carpet cleaning, drywall, roofing, and siding.",
+    "Learn about Black Stone Basement Development Ltd, a Calgary basement renovation company with 5+ years experience in basement development, kitchen remodeling, carpet cleaning, drywall, roofing, and siding.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 const VALUES = [
   {
     title: "One point of contact",
     description:
-      "A single project lead manages every job on site — no runaround between crew members.",
+      "A single project lead manages every job on site, with no runaround between crew members.",
   },
   {
     title: "Fixed, detailed quotes",
@@ -53,36 +57,18 @@ const STATS = [
   { value: siteConfig.serviceAreas.length, suffix: "", label: "Communities Served" },
 ];
 
-const TEAM = [
-  {
-    name: "Marcus Webb",
-    role: "Founder & Project Lead",
-    image:
-      "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800&q=80",
-  },
-  {
-    name: "Dana Okafor",
-    role: "Operations Coordinator",
-    image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
-  },
-  {
-    name: "Ray Petrov",
-    role: "Site Supervisor",
-    image:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=80",
-  },
-  {
-    name: "Lena Fischer",
-    role: "Client Coordinator",
-    image:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
-  },
-];
-
 export default function AboutPage() {
+  const jsonLd = getBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+  ]);
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="border-b border-border py-20 sm:py-24 lg:py-28">
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 lg:px-8">
           <div>
@@ -92,9 +78,9 @@ export default function AboutPage() {
               className="mt-5 font-display text-5xl uppercase leading-[0.98] tracking-tight sm:text-6xl lg:text-[5rem]"
             />
             <p className="mt-7 max-w-lg text-muted-foreground">
-              A Calgary-area home services company run by one dedicated team —
+              A Calgary basement renovation company run by one dedicated team,
               from first walkthrough to final inspection. No crew
-              hand-offs, no surprise line items, no guessing where your
+              hand offs, no surprise line items, no guessing where your
               project stands.
             </p>
           </div>
@@ -104,8 +90,8 @@ export default function AboutPage() {
             className="relative aspect-4/5 overflow-hidden rounded-2xl lg:rounded-3xl"
           >
             <Image
-              src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=1200&q=80"
-              alt="Freshly cleaned carpet in a bright living space"
+              src="/images/services/basement-development.webp"
+              alt="Finished basement development project"
               fill
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="object-cover"
@@ -119,7 +105,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           <Reveal className="relative aspect-4/5 overflow-hidden rounded-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1632759145351-1d592919f522?w=1200&q=80"
+              src="/images/services/roofing.webp"
               alt="Crew working on a roofing project on site"
               fill
               sizes="(min-width: 1024px) 40vw, 100vw"
@@ -135,23 +121,23 @@ export default function AboutPage() {
             <p className="mt-5 max-w-prose text-muted-foreground">
               {siteConfig.name} has spent over 5 years helping homeowners
               across {siteConfig.serviceAreas.join(", ")} restore and protect
-              their homes. From carpet cleaning and post-renovation cleanup to
-              drywall, roofing, and siding, every job is run by a dedicated
-              team that manages scheduling and quality control from start to
-              finish.
+              their homes. From basement development and renovations to
+              carpet cleaning, drywall, roofing, and siding, every job is run
+              by a dedicated team that manages scheduling and quality control
+              from start to finish.
             </p>
             <p className="mt-4 max-w-prose text-muted-foreground">
               We believe getting work done on your home should feel simple,
-              not stressful — detailed quotes with no surprises, regular
-              updates during the job, and a final walkthrough before we call
-              it done.
+              not stressful, with detailed quotes, no surprises, regular
+              updates during the job, and a final walkthrough before we ever
+              call it done.
             </p>
 
             <blockquote className="mt-7 border-l-2 border-accent pl-5 font-display text-lg leading-[1.4] normal-case tracking-normal">
               &ldquo;The best compliment we get is a client who calls us
               again for the next job.&rdquo;
               <span className="mt-2.5 block font-sans text-xs uppercase tracking-[0.1em] text-muted-foreground">
-                — {siteConfig.name}
+                {siteConfig.name}
               </span>
             </blockquote>
           </Reveal>
@@ -190,8 +176,7 @@ export default function AboutPage() {
       <section
         className="relative flex min-h-125 items-center bg-cover bg-center bg-fixed sm:min-h-150"
         style={{
-          backgroundImage:
-            "url(https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1920&q=80)",
+          backgroundImage: "url(/images/services/siding.webp)",
         }}
       >
         <div className="absolute inset-0 bg-black/45" />
@@ -206,40 +191,6 @@ export default function AboutPage() {
                 <p className="mt-3 text-xs uppercase tracking-[0.1em] text-white/90 sm:text-sm">
                   {stat.label}
                 </p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 sm:py-24">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <SectionLabel>The Team</SectionLabel>
-          <h2 className="mt-4 font-display text-3xl uppercase tracking-tight sm:text-4xl">
-            Who you&apos;ll work with.
-          </h2>
-
-          <div className="mt-12 grid grid-cols-2 gap-4 sm:mt-16 sm:grid-cols-4 sm:gap-5">
-            {TEAM.map((member, index) => (
-              <Reveal
-                key={member.name}
-                delay={Math.min(index * 0.05, 0.2)}
-                className="relative aspect-3/4 overflow-hidden rounded-lg"
-              >
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  fill
-                  sizes="(min-width: 640px) 25vw, 50vw"
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-linear-to-t from-black/75 via-black/10 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-4">
-                  <p className="text-sm font-medium text-white">
-                    {member.name}
-                  </p>
-                  <p className="text-xs text-white/70">{member.role}</p>
-                </div>
               </Reveal>
             ))}
           </div>

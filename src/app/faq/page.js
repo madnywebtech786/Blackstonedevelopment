@@ -5,12 +5,15 @@ import { FaqTopics } from "@/components/sections/FaqTopics";
 import { CTABand } from "@/components/sections/CTABand";
 import { faqTopics } from "@/lib/faq-data";
 import { services } from "@/lib/services-data";
-import { getFaqSchema } from "@/lib/schema";
+import { getFaqSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata = {
   title: "FAQ",
   description:
-    "Answers to common questions about working with Black Stone Basement Development Ltd, including service areas, quotes, timelines, and each service we offer.",
+    "Answers to common questions about hiring Black Stone Basement Development Ltd, including service areas, free quotes, timelines, and each service we offer.",
+  alternates: {
+    canonical: "/faq",
+  },
 };
 
 export default function FaqPage() {
@@ -27,14 +30,23 @@ export default function FaqPage() {
     },
   ];
 
-  const jsonLd = getFaqSchema(sections.flatMap((section) => section.faqs));
+  const jsonLd = [
+    getFaqSchema(sections.flatMap((section) => section.faqs)),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "FAQ", path: "/faq" },
+    ]),
+  ];
 
   return (
     <div>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      {jsonLd.map((schema, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
 
       <div className="mx-auto max-w-6xl px-4 py-32 sm:px-6 lg:px-8">
         <Reveal>

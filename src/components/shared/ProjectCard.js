@@ -23,7 +23,7 @@ export function ProjectCard({ project, className = "", style }) {
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/70">
             {project.city}
           </p>
-          <h3 className="mt-2 font-display text-xl uppercase tracking-tight text-white sm:text-3xl">
+          <h3 className="mt-2 font-display text-lg uppercase tracking-tight text-white sm:text-3xl">
             {project.title}
           </h3>
         </div>

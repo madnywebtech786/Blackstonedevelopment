@@ -2,16 +2,29 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 import { StaggerText } from "@/components/animations/StaggerText";
 import { Reveal } from "@/components/animations/Reveal";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata = {
   title: "Contact",
   description:
-    "Get in touch with Black Stone Basement Development Ltd for a quote on carpet cleaning, drywall, roofing, or siding in Calgary and area.",
+    "Get in touch with Black Stone Basement Development Ltd for a free quote on basement development, drywall, roofing, or siding around Calgary today.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {
+  const jsonLd = getBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Contact", path: "/contact" },
+  ]);
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="mx-auto max-w-3xl px-4 pt-32 pb-4 text-center sm:px-6 sm:pt-40 lg:px-8">
         <Reveal>
           <SectionLabel>Get In Touch</SectionLabel>

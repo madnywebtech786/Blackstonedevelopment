@@ -16,12 +16,12 @@ function getTransporter() {
 function buildContactEmailHtml({ name, phone, address, services, message }) {
   return `
     <div style="font-family: Arial, sans-serif; max-width: 560px; margin: 0 auto;">
-      <div style="background: #14161a; padding: 24px; text-align: center;">
-        <h1 style="color: #f4f5f7; font-size: 18px; margin: 0; letter-spacing: 0.05em; text-transform: uppercase;">
+      <div style="background: #c21d2e; padding: 24px; text-align: center;">
+        <h1 style="color: #ffffff; font-size: 18px; margin: 0; letter-spacing: 0.05em; text-transform: uppercase;">
           ${siteConfig.name}
         </h1>
       </div>
-      <div style="padding: 24px; border: 1px solid #d7dbe1; border-top: none;">
+      <div style="padding: 24px; border: 1px solid #e5e2e2; border-top: none;">
         <h2 style="font-size: 16px; margin-top: 0;">New quote request</h2>
         <p style="margin: 4px 0;"><strong>Name:</strong> ${name}</p>
         <p style="margin: 4px 0;"><strong>Phone:</strong> ${phone}</p>

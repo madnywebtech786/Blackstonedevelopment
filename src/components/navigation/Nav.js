@@ -37,7 +37,7 @@ export function Nav() {
               : "text-foreground"
         }`}
       >
-        <Logo light={showLightText} />
+        <Logo />
 
         <nav className="hidden md:block" aria-label="Primary">
           <ul className="flex items-center gap-8">

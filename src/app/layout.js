@@ -4,6 +4,8 @@ import "./globals.css";
 import { Nav } from "@/components/navigation/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/navigation/WhatsAppButton";
+import { siteConfig } from "@/lib/site-config";
+import { getLocalBusinessSchema } from "@/lib/schema";
 
 const geistSans = Geist({
   variable: "--font-sans",
@@ -17,22 +19,39 @@ const oswald = Oswald({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL(siteConfig.url),
   title: {
     template: "%s | Black Stone Basement Development Ltd",
-    default: "Black Stone Basement Development Ltd — Calgary Carpet Cleaning, Drywall, Roofing & Siding",
+    default: "Black Stone Basement Development Ltd: Calgary Basement Renovation, Drywall Roofing & Siding Experts",
   },
   description:
-    "Black Stone Basement Development Ltd is a Calgary-area home services company specializing in carpet cleaning, renovation cleaning, drywall, roofing, and siding.",
+    "Black Stone Basement Development Ltd is a Calgary basement renovation contractor specializing in basement development, drywall, carpet cleaning, roofing, and siding.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    siteName: siteConfig.name,
+    locale: "en_CA",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({ children }) {
+  const localBusinessSchema = getLocalBusinessSchema();
+
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${oswald.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />

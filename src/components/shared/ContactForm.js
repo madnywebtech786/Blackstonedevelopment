@@ -139,7 +139,7 @@ export function ContactForm() {
         </span>
         <SectionLabel className="mt-6 text-white/50">Message Sent</SectionLabel>
         <h3 className="mt-3 font-display text-2xl uppercase tracking-tight text-white sm:text-3xl">
-          Thanks — we&apos;ve got it.
+          Thank you, we have it.
         </h3>
         <p className="mt-3 max-w-xs text-sm text-white/70">
           We&apos;ll review your project details and get back to you within

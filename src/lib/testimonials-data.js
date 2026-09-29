@@ -1,7 +1,7 @@
 export const testimonials = [
   {
     quote:
-      "Our carpets looked brand new after they were done — every stain from years of pets and kids was gone. Communication was clear from the first call to the final walkthrough.",
+      "Our carpets looked brand new after they were done. Every stain from years of pets and kids was gone, and communication stayed clear from the first call to the final walkthrough.",
     author: "Sarah M.",
     location: "Calgary, AB",
     serviceSlug: "carpet-cleaning",
@@ -17,7 +17,7 @@ export const testimonials = [
   },
   {
     quote:
-      "We interviewed a few companies before choosing Black Stone for our roof replacement. Their quote was detailed and the work matched it exactly — no surprises.",
+      "We interviewed a few companies before choosing Black Stone for our roof replacement. Their quote was detailed, and the finished work matched it with zero surprises.",
     author: "Priya K.",
     location: "Okotoks, AB",
     serviceSlug: "roofing",

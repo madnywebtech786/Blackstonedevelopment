@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { StaggerText } from "@/components/animations/StaggerText";
@@ -8,19 +8,36 @@ import { Button } from "@/components/ui/Button";
 import { ProjectCard } from "@/components/shared/ProjectCard";
 import { projects } from "@/lib/projects-data";
 
-const CARD_WIDTH_VW = 48;
+const CARD_WIDTH_VW_MOBILE = 82;
+const CARD_WIDTH_VW_DESKTOP = 48;
 const CARD_GAP_VW = 3;
+
+function useCardWidthVw() {
+  const [widthVw, setWidthVw] = useState(CARD_WIDTH_VW_DESKTOP);
+
+  useEffect(() => {
+    const query = window.matchMedia("(max-width: 639px)");
+    const update = () => setWidthVw(query.matches ? CARD_WIDTH_VW_MOBILE : CARD_WIDTH_VW_DESKTOP);
+
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
+
+  return widthVw;
+}
 
 export function FeaturedProjects() {
   const sectionRef = useRef(null);
   const prefersReducedMotion = useReducedMotion();
+  const cardWidthVw = useCardWidthVw();
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start start", "end end"],
   });
 
-  const trackWidthVw = projects.length * (CARD_WIDTH_VW + CARD_GAP_VW);
+  const trackWidthVw = projects.length * (cardWidthVw + CARD_GAP_VW);
   const travelVw = Math.max(trackWidthVw - 100, 0);
 
   const x = useTransform(scrollYProgress, [0, 1], ["0vw", `-${travelVw}vw`]);
@@ -36,7 +53,7 @@ export function FeaturedProjects() {
             <ProjectCard
               key={project.slug}
               project={project}
-              className="w-[85vw] shrink-0 sm:w-[48vw]"
+              className="w-[82vw] shrink-0 sm:w-[48vw]"
             />
           ))}
         </div>
@@ -68,7 +85,7 @@ export function FeaturedProjects() {
               key={project.slug}
               project={project}
               className="shrink-0"
-              style={{ width: `${CARD_WIDTH_VW}vw` }}
+              style={{ width: `${cardWidthVw}vw` }}
             />
           ))}
           <div className="shrink-0" style={{ width: "1px" }} aria-hidden="true" />

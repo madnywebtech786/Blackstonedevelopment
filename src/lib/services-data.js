@@ -6,8 +6,7 @@ export const services = [
       "Deep steam and stain-removal carpet cleaning that lifts embedded dirt and restores fresh, healthy flooring.",
     heroDescription:
       "From high-traffic hallways to whole-home carpet refreshes, our deep-steam extraction lifts embedded dirt, allergens, and stains that vacuuming alone can't reach.",
-    heroImage:
-      "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=1600&q=80",
+    heroImage: "/images/services/carpet-cleaning.webp",
     features: [
       "Hot water steam extraction",
       "Pet stain and odor treatment",
@@ -38,9 +37,8 @@ export const services = [
     summary:
       "Post-construction cleanup that clears dust, debris, and residue so newly renovated spaces are move-in ready.",
     heroDescription:
-      "Construction dust settles into every surface. We handle the full post-renovation cleanup — floors, fixtures, windowsills, and vents — so your finished space is truly move-in ready.",
-    heroImage:
-      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1600&q=80",
+      "Construction dust settles into every surface. We handle the full post-renovation cleanup, including floors, fixtures, windowsills, and vents, so your finished space is truly move-in ready today.",
+    heroImage: "/images/services/renovation-cleaning.webp",
     features: [
       "Fine dust and debris removal",
       "Window, sill, and fixture detailing",
@@ -67,8 +65,7 @@ export const services = [
       "Drywall installation, patching, taping, and texture matching for renovations, repairs, and new construction.",
     heroDescription:
       "From small patch repairs to full-room installation, we handle drywall hanging, taping, mudding, and texture matching so new work blends seamlessly with the rest of your home.",
-    heroImage:
-      "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1600&q=80",
+    heroImage: "/images/services/drywall.webp",
     features: [
       "Drywall installation and hanging",
       "Patch and water-damage repair",
@@ -95,8 +92,7 @@ export const services = [
       "Roof replacement, repair, and leak detection to protect your home through Alberta's toughest weather.",
     heroDescription:
       "From storm damage repairs to full roof replacements, we protect your home with quality materials and workmanship built for Alberta's weather.",
-    heroImage:
-      "https://images.unsplash.com/photo-1632759145351-1d592919f522?w=1600&q=80",
+    heroImage: "/images/services/roofing.webp",
     features: [
       "Asphalt shingle roof replacement",
       "Roof repair and leak detection",
@@ -122,9 +118,8 @@ export const services = [
     summary:
       "Siding installation and replacement that improves curb appeal, insulation, and weather protection.",
     heroDescription:
-      "New siding does more than refresh curb appeal — it tightens up insulation and protects your home's exterior from Alberta's weather year-round.",
-    heroImage:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80",
+      "New siding does more than refresh curb appeal. It tightens up insulation and protects your home exterior from Alberta weather year round.",
+    heroImage: "/images/services/siding.webp",
     features: [
       "Vinyl and composite siding installation",
       "Siding repair and panel replacement",
@@ -151,8 +146,7 @@ export const services = [
       "Full kitchen renovations from layout redesign to custom cabinetry, countertops, and lighting.",
     heroDescription:
       "From open-concept layout redesigns to custom cabinetry, countertops, and lighting, we turn outdated kitchens into the space your home deserves.",
-    heroImage:
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=1600&q=80",
+    heroImage: "/images/services/kitchen-remodeling.webp",
     features: [
       "Custom cabinetry and storage design",
       "Countertop and backsplash installation",
@@ -183,9 +177,8 @@ export const services = [
     summary:
       "Transform unfinished basements into legal suites, home theaters, or additional living space.",
     heroDescription:
-      "Turn unused square footage into a legal secondary suite, home theater, or additional living space — fully permitted, framed, and finished from start to end.",
-    heroImage:
-      "https://images.unsplash.com/photo-1615529162924-f8605388461d?w=1600&q=80",
+      "Your basement is the most underused space in your home. We turn it into a legal secondary suite, family retreat, or income rental space, fully permitted, framed, and finished from the ground up.",
+    heroImage: "/images/services/basement-development.webp",
     features: [
       "Legal secondary suite development",
       "Framing, insulation, and drywall",
@@ -212,8 +205,7 @@ export const services = [
       "From powder room refreshes to full spa-style master bathroom transformations.",
     heroDescription:
       "From powder room refreshes to full spa-style master ensuites with curbless showers and heated flooring, we design bathrooms built around how you actually live.",
-    heroImage:
-      "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1600&q=80",
+    heroImage: "/images/services/bathroom-renovation.webp",
     features: [
       "Custom tile and shower installation",
       "Vanity and fixture upgrades",
@@ -238,8 +230,7 @@ export const services = [
     title: "Flooring Installation",
     summary:
       "Hardwood, engineered wood, tile, and luxury vinyl plank installation throughout the home.",
-    heroImage:
-      "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=1600&q=80",
+    heroImage: "/images/services/flooring.webp",
     features: [
       "Hardwood and engineered wood installation",
       "Tile and luxury vinyl plank flooring",
@@ -264,8 +255,7 @@ export const services = [
     title: "Electrical Services",
     summary:
       "Panel upgrades, rewiring, lighting design, and electrical work for renovations and additions.",
-    heroImage:
-      "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=80",
+    heroImage: "/images/services/electrical.webp",
     features: [
       "Panel upgrades and rewiring",
       "Lighting design and installation",
@@ -290,8 +280,7 @@ export const services = [
     title: "Framing",
     summary:
       "Structural framing for additions, basement suites, and interior wall reconfigurations.",
-    heroImage:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&q=80",
+    heroImage: "/images/services/framing.webp",
     features: [
       "Structural wall framing",
       "Load-bearing wall removal and beam installation",
@@ -311,8 +300,7 @@ export const services = [
     title: "Interior & Exterior Painting",
     summary:
       "Professional painting services for full renovations, single rooms, or exterior refreshes.",
-    heroImage:
-      "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1600&q=80",
+    heroImage: "/images/services/painting.webp",
     features: [
       "Interior and exterior painting",
       "Color consultation",
@@ -332,8 +320,7 @@ export const services = [
     title: "Decks & Fencing",
     summary:
       "Custom deck construction and fencing for outdoor living and property definition.",
-    heroImage:
-      "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?w=1600&q=80",
+    heroImage: "/images/services/decks-fencing.webp",
     features: [
       "Custom deck design and construction",
       "Composite and pressure-treated wood options",
@@ -353,8 +340,7 @@ export const services = [
     title: "Windows & Doors",
     summary:
       "Energy-efficient window and door replacement for renovations and additions.",
-    heroImage:
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1600&q=80",
+    heroImage: "/images/services/windows-doors.webp",
     features: [
       "Energy-efficient window replacement",
       "Exterior and interior door installation",
@@ -374,8 +360,7 @@ export const services = [
     title: "Driveways & Concrete",
     summary:
       "Concrete driveways, walkways, and flatwork for renovation and curb appeal projects.",
-    heroImage:
-      "https://images.unsplash.com/photo-1626885930974-4b69aa21bbf9?w=1600&q=80",
+    heroImage: "/images/services/driveways-concrete.webp",
     features: [
       "Concrete driveway installation and replacement",
       "Walkway and patio flatwork",
@@ -395,8 +380,7 @@ export const services = [
     title: "Home Additions",
     summary:
       "Room additions and second-story extensions to grow your home's livable space.",
-    heroImage:
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1600&q=80",
+    heroImage: "/images/services/home-additions.webp",
     features: [
       "Single-story room additions",
       "Second-story extensions",
@@ -416,8 +400,7 @@ export const services = [
     title: "General Contracting",
     summary:
       "Full-service project management for multi-trade renovations from start to finish.",
-    heroImage:
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1600&q=80",
+    heroImage: "/images/services/general-contracting.webp",
     features: [
       "Single point of contact for multi-trade projects",
       "Permit management and inspections",
@@ -428,7 +411,7 @@ export const services = [
       {
         question: "What does a general contractor do on my project?",
         answer:
-          "We manage every trade involved in your renovation — scheduling, permits, inspections, and quality control — so you have one point of contact from start to finish.",
+          "We manage every trade involved in your renovation, including scheduling, permits, inspections, and quality control, giving you a single point of contact from start to finish today.",
       },
     ],
   },

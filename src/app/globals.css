@@ -1,26 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  /* Base */
-  --color-background: #f4f5f7;
+  /* Base — full white */
+  --color-background: #ffffff;
   --color-foreground: #14161a;
 
-  /* Surfaces */
-  --color-surface: #eceef1;
+  /* Surfaces — flat white, no gray fills */
+  --color-surface: #ffffff;
   --color-surface-elevated: #ffffff;
-  --color-border: #d7dbe1;
+  --color-border: #e5e2e2;
 
   /* Text */
   --color-muted-foreground: #6b7280;
 
-  /* Accent — muted cool-blue, used ONLY for focus rings, tiny details, link-hover.
-     Never as a large fill or background. */
-  --color-accent: #5b7fb5;
+  /* Accent — brand red, used for focus rings, links, small details */
+  --color-accent: #c21d2e;
   --color-accent-foreground: #ffffff;
 
-  /* Primary — near-black, used for primary CTA buttons */
-  --color-primary: #14161a;
-  --color-primary-foreground: #f4f5f7;
+  /* Primary — brand red, used for primary CTA buttons */
+  --color-primary: #c21d2e;
+  --color-primary-foreground: #ffffff;
 }
 
 @theme inline {

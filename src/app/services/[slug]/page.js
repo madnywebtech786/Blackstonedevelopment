@@ -36,6 +36,9 @@ export async function generateMetadata({ params }) {
   return {
     title: service.title,
     description: `${service.summary} Serving ${siteConfig.serviceAreas.join(", ")}.`,
+    alternates: {
+      canonical: `/services/${service.slug}`,
+    },
     openGraph: {
       title: `${service.title} | ${siteConfig.name}`,
       description: service.summary,

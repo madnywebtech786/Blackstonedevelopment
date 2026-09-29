@@ -7,11 +7,16 @@ export function Footer() {
   return (
     <footer className="bg-foreground text-background">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <Logo size="lg" light />
-            <p className="mt-4 max-w-xs text-sm text-background/60">
+            <div className="inline-flex rounded-lg bg-white p-4">
+              <Logo size="lg" />
+            </div>
+            <p className="mt-5 max-w-sm font-display text-lg uppercase tracking-tight text-background">
               {siteConfig.tagline}
+            </p>
+            <p className="mt-3 max-w-sm text-sm leading-relaxed text-background/60">
+              {siteConfig.description}
             </p>
           </div>
 
