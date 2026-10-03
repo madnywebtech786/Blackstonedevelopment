@@ -33,14 +33,23 @@ export async function generateMetadata({ params }) {
   const service = getServiceBySlug(slug);
   if (!service) return {};
 
+  const description = `${service.summary} Serving ${siteConfig.serviceAreas.join(", ")}.`;
+  const ogTitle = `${service.title} | ${siteConfig.name}`;
+
   return {
     title: service.title,
-    description: `${service.summary} Serving ${siteConfig.serviceAreas.join(", ")}.`,
+    description,
     alternates: {
       canonical: `/services/${service.slug}`,
     },
     openGraph: {
-      title: `${service.title} | ${siteConfig.name}`,
+      title: ogTitle,
+      description: service.summary,
+      url: `/services/${service.slug}`,
+      images: [service.heroImage],
+    },
+    twitter: {
+      title: ogTitle,
       description: service.summary,
       images: [service.heroImage],
     },

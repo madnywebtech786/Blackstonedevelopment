@@ -7,7 +7,7 @@ export const siteConfig = {
   url: "https://example.com",
   phone: "403-971-9530",
   phoneHref: "tel:+14039719530",
-  email: "info@blackstonebasement.ca",
+  email: "karanchambal10@gmail.com",
   whatsappNumber: "14039719530",
   address: {
     streetAddress: "123 Example Street NW",

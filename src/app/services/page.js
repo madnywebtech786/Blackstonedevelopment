@@ -4,12 +4,24 @@ import { Reveal } from "@/components/animations/Reveal";
 import { services } from "@/lib/services-data";
 import { getBreadcrumbSchema } from "@/lib/schema";
 
+const TITLE = "Services";
+const DESCRIPTION =
+  "Explore all services offered by Black Stone Basement Development Ltd, from basement development and carpet cleaning to drywall, roofing, and siding across Calgary and area.";
+
 export const metadata = {
-  title: "Services",
-  description:
-    "Explore all services offered by Black Stone Basement Development Ltd, from basement development and carpet cleaning to drywall, roofing, and siding across Calgary and area.",
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: {
     canonical: "/services",
+  },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/services",
+  },
+  twitter: {
+    title: TITLE,
+    description: DESCRIPTION,
   },
 };
 

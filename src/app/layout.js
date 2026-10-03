@@ -21,21 +21,45 @@ const oswald = Oswald({
 export const metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    template: "%s | Black Stone Basement Development Ltd",
-    default: "Black Stone Basement Development Ltd: Calgary Basement Renovation, Drywall Roofing & Siding Experts",
+    template: `%s | ${siteConfig.name}`,
+    default: `${siteConfig.name}: Calgary Basement Renovation, Drywall Roofing & Siding Experts`,
   },
-  description:
-    "Black Stone Basement Development Ltd is a Calgary basement renovation contractor specializing in basement development, drywall, carpet cleaning, roofing, and siding.",
+  description: siteConfig.description,
+  keywords: [
+    "basement development Calgary",
+    "basement renovation Calgary",
+    "kitchen remodeling Calgary",
+    "bathroom renovation Calgary",
+    "drywall contractor Calgary",
+    "roofing Calgary",
+    "siding Calgary",
+  ],
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     siteName: siteConfig.name,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    url: siteConfig.url,
     locale: "en_CA",
   },
   twitter: {
     card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 

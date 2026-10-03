@@ -4,12 +4,24 @@ import { Reveal } from "@/components/animations/Reveal";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { getBreadcrumbSchema } from "@/lib/schema";
 
+const TITLE = "Contact";
+const DESCRIPTION =
+  "Get in touch with Black Stone Basement Development Ltd for a free quote on basement development, drywall, roofing, or siding around Calgary today.";
+
 export const metadata = {
-  title: "Contact",
-  description:
-    "Get in touch with Black Stone Basement Development Ltd for a free quote on basement development, drywall, roofing, or siding around Calgary today.",
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: {
     canonical: "/contact",
+  },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/contact",
+  },
+  twitter: {
+    title: TITLE,
+    description: DESCRIPTION,
   },
 };
 

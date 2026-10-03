@@ -7,12 +7,24 @@ import { faqTopics } from "@/lib/faq-data";
 import { services } from "@/lib/services-data";
 import { getFaqSchema, getBreadcrumbSchema } from "@/lib/schema";
 
+const TITLE = "FAQ";
+const DESCRIPTION =
+  "Answers to common questions about hiring Black Stone Basement Development Ltd, including service areas, free quotes, timelines, and each service we offer.";
+
 export const metadata = {
-  title: "FAQ",
-  description:
-    "Answers to common questions about hiring Black Stone Basement Development Ltd, including service areas, free quotes, timelines, and each service we offer.",
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: {
     canonical: "/faq",
+  },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/faq",
+  },
+  twitter: {
+    title: TITLE,
+    description: DESCRIPTION,
   },
 };
 

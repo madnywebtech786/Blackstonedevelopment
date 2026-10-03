@@ -1,5 +1,9 @@
 import { siteConfig } from "@/lib/site-config";
 
+function getSameAs() {
+  return Object.values(siteConfig.social ?? {}).filter(Boolean);
+}
+
 export function getLocalBusinessSchema() {
   return {
     "@context": "https://schema.org",
@@ -9,6 +13,8 @@ export function getLocalBusinessSchema() {
     url: siteConfig.url,
     telephone: siteConfig.phone,
     email: siteConfig.email,
+    image: `${siteConfig.url}/images/logo.png`,
+    logo: `${siteConfig.url}/images/logo.png`,
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.address.streetAddress,
@@ -17,8 +23,42 @@ export function getLocalBusinessSchema() {
       postalCode: siteConfig.address.postalCode,
       addressCountry: siteConfig.address.addressCountry,
     },
-    areaServed: siteConfig.serviceAreas,
+    areaServed: siteConfig.serviceAreas.map((area) => ({
+      "@type": "City",
+      name: area,
+    })),
+    sameAs: getSameAs(),
   };
+}
+
+export function getWebsiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: siteConfig.name,
+    url: siteConfig.url,
+    publisher: {
+      "@type": "HomeAndConstructionBusiness",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+  };
+}
+
+export function getReviewSchema(testimonials) {
+  return testimonials.map((testimonial) => ({
+    "@context": "https://schema.org",
+    "@type": "Review",
+    reviewBody: testimonial.quote,
+    author: {
+      "@type": "Person",
+      name: testimonial.author,
+    },
+    itemReviewed: {
+      "@type": "HomeAndConstructionBusiness",
+      name: siteConfig.name,
+    },
+  }));
 }
 
 export function getServiceSchema(service) {
@@ -26,12 +66,19 @@ export function getServiceSchema(service) {
     "@context": "https://schema.org",
     "@type": "Service",
     serviceType: service.title,
+    name: service.title,
     description: service.summary,
+    image: service.heroImage ? `${siteConfig.url}${service.heroImage}` : undefined,
+    url: `${siteConfig.url}/services/${service.slug}`,
     provider: {
       "@type": "HomeAndConstructionBusiness",
       name: siteConfig.name,
+      url: siteConfig.url,
     },
-    areaServed: siteConfig.serviceAreas,
+    areaServed: siteConfig.serviceAreas.map((area) => ({
+      "@type": "City",
+      name: area,
+    })),
   };
 }
 

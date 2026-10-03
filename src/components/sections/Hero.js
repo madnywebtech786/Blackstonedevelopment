@@ -8,7 +8,7 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 import { Button } from "@/components/ui/Button";
 import { services } from "@/lib/services-data";
 
-const SLIDE_SLUGS = ["basement-development", "roofing", "siding"];
+const SLIDE_SLUGS = ["basement-development", "kitchen-remodeling", "bathroom-renovation"];
 
 const SLIDES = SLIDE_SLUGS.map((slug) => services.find((service) => service.slug === slug)).filter(
   Boolean

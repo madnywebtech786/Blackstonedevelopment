@@ -8,12 +8,24 @@ import { CTABand } from "@/components/sections/CTABand";
 import { siteConfig } from "@/lib/site-config";
 import { getBreadcrumbSchema } from "@/lib/schema";
 
+const TITLE = "About";
+const DESCRIPTION =
+  "Learn about Black Stone Basement Development Ltd, a Calgary basement renovation company with 5+ years experience in basement development, kitchen remodeling, carpet cleaning, drywall, roofing, and siding.";
+
 export const metadata = {
-  title: "About",
-  description:
-    "Learn about Black Stone Basement Development Ltd, a Calgary basement renovation company with 5+ years experience in basement development, kitchen remodeling, carpet cleaning, drywall, roofing, and siding.",
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: {
     canonical: "/about",
+  },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/about",
+  },
+  twitter: {
+    title: TITLE,
+    description: DESCRIPTION,
   },
 };
 

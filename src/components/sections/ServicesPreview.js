@@ -12,12 +12,12 @@ import { Button } from "@/components/ui/Button";
 import { services } from "@/lib/services-data";
 
 const FEATURED_SLUGS = [
-  "carpet-cleaning",
-  "renovation-cleaning",
-  "drywall",
-  "roofing",
-  "siding",
+  "basement-development",
   "kitchen-remodeling",
+  "bathroom-renovation",
+  "home-additions",
+  "flooring",
+  "windows-doors",
 ];
 
 export function ServicesPreview() {

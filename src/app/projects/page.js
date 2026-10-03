@@ -3,12 +3,24 @@ import { Reveal } from "@/components/animations/Reveal";
 import { ProjectGallery } from "@/components/shared/ProjectGallery";
 import { getBreadcrumbSchema } from "@/lib/schema";
 
+const TITLE = "Projects";
+const DESCRIPTION =
+  "Browse completed projects from Black Stone Basement Development Ltd across Calgary, Airdrie, Okotoks, Cochrane, Chestermere, and Strathmore.";
+
 export const metadata = {
-  title: "Projects",
-  description:
-    "Browse completed projects from Black Stone Basement Development Ltd across Calgary, Airdrie, Okotoks, Cochrane, Chestermere, and Strathmore.",
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: {
     canonical: "/projects",
+  },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/projects",
+  },
+  twitter: {
+    title: TITLE,
+    description: DESCRIPTION,
   },
 };
 
