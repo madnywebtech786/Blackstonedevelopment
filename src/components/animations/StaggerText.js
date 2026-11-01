@@ -16,7 +16,7 @@ export function StaggerText({ text, className = "", as: Tag = "h2" }) {
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-80px" }}
+      viewport={{ once: true, margin: "0px 0px -80px 0px" }}
     >
       {words.map((word, index) => (
         <motion.span

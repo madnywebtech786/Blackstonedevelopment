@@ -5,7 +5,7 @@ import { useInView, useMotionValue, useReducedMotion, animate } from "motion/rea
 
 export function AnimatedCounter({ value, suffix = "" }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-80px" });
+  const isInView = useInView(ref, { once: true, margin: "0px 0px -80px 0px" });
   const prefersReducedMotion = useReducedMotion();
   const motionValue = useMotionValue(0);
 
